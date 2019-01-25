@@ -4,7 +4,7 @@ class EventList {
   constructor () {
     this.events = this.inStorage()
   }
-  
+
   inStorage() {
     if(!localStorage.getItem('Events')){
       return []
