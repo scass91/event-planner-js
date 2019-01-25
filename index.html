@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="src/EventPlan.js"></script>
+    <script src="src/EventList.js"></script>
+    <script src="interface.js"></script>
+    <title>Event Planner</title>
+  </head>
+
+  <body>
+    <h1>Events list</h1>
+    <div style="margin: 2em">
+      <input type="text" id="textbox">
+      <input type="date" id="date">
+      <input type="time" id="time">
+      <button id="button">Create event</button>
+    </div>
+
+    <div id="events">
+      <div id="event"></div>
+    </div>
+
+    <button id="delete-button">Clear All</button>
+
+    <div class="container">
+     <header class="header">
+       <div class="search">
+         <input type="text" placeholder="Enter City Name" id="search-txt">
+         <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+       </div>
+     </header>
+
+     <main id="main">
+
+       <div class="city-icon">
+         <div class="city-icon-holder">
+         <div id="city-name"></div>
+         <img src="" alt="" id="icon">
+           </div>
+       </div>
+
+       <div class="temperature">
+         <div id="temp"></div>
+       </div>
+
+       <div class="humidity">
+         <div id="humidity-div"></div>
+       </div>
+
+     </main>
+
+   </div>
+    <script type='text/javascript' src='config.js'></script>
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
